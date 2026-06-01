@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from ..models import Order, Ticket, FAQItem
+from app.models import Order, Ticket, FAQItem
 
 def get_order_status(db: Session, order_id: int) -> dict:
     order = db.query(Order).filter(Order.id == order_id).first()

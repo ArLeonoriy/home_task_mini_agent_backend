@@ -1,9 +1,9 @@
 import json
 import re
 from sqlalchemy.orm import Session
-from ..models import Message, AgentEvent
-from .llm_client import FakeLLMClient
-from .tools import get_order_status, create_support_ticket, search_faq
+from app.models import Message, AgentEvent
+from app.services.llm_client import FakeLLMClient
+from app.services.tools import get_order_status, create_support_ticket, search_faq
 
 client = FakeLLMClient()
 

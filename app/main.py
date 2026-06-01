@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from .database import engine, Base, SessionLocal
-from .models import Order, FAQItem
-from .routers import chats, tickets, faq
+from app.database import engine, Base, SessionLocal
+from app.models import Order, FAQItem
+from app.routers import chats, tickets, faq
 
 app = FastAPI(title="Support Chat Agent")
 
