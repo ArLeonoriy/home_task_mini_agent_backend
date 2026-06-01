@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from ..database import get_db
-from ..models import FAQItem
-from ..schemas import FAQItemResponse
+from app.database import get_db
+from app.models import FAQItem
+from app.schemas import FAQItemResponse
 
 router = APIRouter(prefix="/faq", tags=["faq"])
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from ..database import get_db
-from ..models import Ticket
-from ..schemas import TicketResponse, TicketUpdateRequest
+from app.database import get_db
+from app.models import Ticket
+from app.schemas import TicketResponse, TicketUpdateRequest
 
 router = APIRouter(prefix="/tickets", tags=["tickets"])
 
